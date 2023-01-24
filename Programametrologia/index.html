@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="es">
+    <div class="head">
+<head>
+    <meta http-equiv="content-type"
+    content="text/html; charset=utf-8"/>
+    <title>programamatrologia </title>
+    <meta name="language" content="es">
+    <meta  name="autor" content="Douglas Moreta"/> 
+</head>
+
+
+<boby>
+    <header>
+<link rel="stylesheet" href="CSS/estilos.css">
+<div align="center">
+<h2>UNIVERSIDAD TÉCNICA DE AMBATO </h2>
+<h2> FACULTAD DE INGENIERÍA CIVIL Y  MECÁNICA</h2>
+   
+<div class="contenedor">
+    <img src="IMAGEN/cello.jpg" class="contenedor">
+
+</div>
+
+<h3>Proyecto Metrología</h3>
+    <h4>Nombre: Douglas Moreta</h4>
+    <h4>Curso: 1ro "B"</h4>
+<h3>Calculadora de tolerancias para ejes y agujeros</h3>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+<script defer src="https://www.pferd.com/media/global-layout/js/general.min/tolerance_calculator_fit_calculator_min_js.js"></script>
+
+<section>
+    <div align="center">
+    <div class="table">
+    <table>
+        <tr>
+            <td> 
+<div id="tolerance_calculator_fit_calculator" class="content-1-col">
+<div class="callout alert message"></div>
+<div class="row diameter">
+<div class="columns small-12">
+
+</div>
+<div class="columns small-12">
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtNominalDiameter">Designar diametro nominal:</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text"class="input2" id="txtNominalDiameter"/>
+</div>
+<div class="columns small-1">
+<div class="val">mm</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row tolerance_shaft">
+<div class="columns small-12">
+<h2 class="text-center">EJE</h2>
+</div>
+<div class="columns small-12">
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="ddlShaft">Posición y grado de tolerancia:</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<div class="select-replacement">
+<select id="ddlShaft">
+<option value="0">Seleccione</option>
+<option value="h1">h1</option>
+<option value="h2">h2</option>
+<option value="h3">h3</option>
+<option value="h4">h4</option>
+<option value="h5">h5</option>
+<option value="h6">h6</option>
+<option value="h7">h7</option>
+<option value="h8">h8</option>
+<option value="h9">h9</option>
+<option value="h10">h10</option>
+<option value="h11">h11</option>
+<option value="h12">h12</option>
+<option value="h13">h13</option>
+<option value="h14">h14</option>
+<option value="h15">h15</option>
+<option value="h16">h16</option>
+<option value="h17">h17</option>
+<option value="h18">h18</option>
+<option value="a9">a9</option>
+<option value="a10">a10</option>
+<option value="a11">a11</option>
+<option value="a12">a12</option>
+<option value="a13">a13</option>
+<option value="b8">b8</option>
+<option value="b9">b9</option>
+<option value="b10">b10</option>
+<option value="b11">b11</option>
+<option value="b12">b12</option>
+<option value="b13">b13</option>
+<option value="c8">c8</option>
+<option value="c9">c9</option>
+<option value="c10">c10</option>
+<option value="c11">c11</option>
+<option value="c12">c12</option>
+<option value="cd5">cd5</option>
+<option value="cd6">cd6</option>
+<option value="cd7">cd7</option>
+<option value="cd8">cd8</option>
+<option value="cd9">cd9</option>
+<option value="d10">d10</option>
+<option value="d5">d5</option>
+<option value="d6">d6</option>
+<option value="d7">d7</option>
+<option value="d8">d8</option>
+<option value="d9">d9</option>
+<option value="d10">d10</option>
+<option value="d11">d11</option>
+<option value="d12">d12</option>
+<option value="d13">d13</option>
+<option value="e5">e5</option>
+<option value="e6">e6</option>
+<option value="e7">e7</option>
+<option value="e8">e8</option>
+<option value="e9">e9</option>
+<option value="e10">e10</option>
+<option value="ef3">ef3</option>
+<option value="ef4">ef4</option>
+<option value="ef5">ef5</option>
+<option value="ef6">ef6</option>
+<option value="ef7">ef7</option>
+<option value="ef8">ef8</option>
+<option value="ef9">ef9</option>
+<option value="ef10">ef10</option>
+<option value="f3">f3</option>
+<option value="f4">f4</option>
+<option value="f5">f5</option>
+<option value="f6">f6</option>
+<option value="f7">f7</option>
+<option value="f8">f8</option>
+<option value="f9">f9</option>
+<option value="f10">f10</option>
+<option value="fg3">fg3</option>
+<option value="fg4">fg4</option>
+<option value="fg5">fg5</option>
+<option value="fg6">fg6</option>
+<option value="fg7">fg7</option>
+<option value="fg8">fg8</option>
+<option value="fg9">fg9</option>
+<option value="fg10">fg10</option>
+<option value="g3">g3</option>
+<option value="g4">g4</option>
+<option value="g5">g5</option>
+<option value="g6">g6</option>
+<option value="g7">g7</option>
+<option value="g8">g8</option>
+<option value="g9">g9</option>
+<option value="g10">g10</option>
+<option value="js1">js1</option>
+<option value="js2">js2</option>
+<option value="js3">js3</option>
+<option value="js4">js4</option>
+<option value="js5">js5</option>
+<option value="js6">js6</option>
+<option value="js7">js7</option>
+<option value="js8">js8</option>
+<option value="js9">js9</option>
+<option value="js10">js10</option>
+<option value="js11">js11</option>
+<option value="js12">js12</option>
+<option value="js13">js13</option>
+<option value="js14">js14</option>
+<option value="js15">js15</option>
+<option value="js16">js16</option>
+<option value="js17">js17</option>
+<option value="js18">js18</option>
+<option value="j5">j5</option>
+<option value="j6">j6</option>
+<option value="j7">j7</option>
+<option value="j8">j8</option>
+<option value="k3">k3</option>
+<option value="k4">k4</option>
+<option value="k5">k5</option>
+<option value="k6">k6</option>
+<option value="k7">k7</option>
+<option value="k8">k8</option>
+<option value="k9">k9</option>
+<option value="k10">k10</option>
+<option value="k11">k11</option>
+<option value="k12">k12</option>
+<option value="k13">k13</option>
+<option value="m3">m3</option>
+<option value="m4">m4</option>
+<option value="m5">m5</option>
+<option value="m6">m6</option>
+<option value="m7">m7</option>
+<option value="m8">m8</option>
+<option value="m9">m9</option>
+<option value="n3">n3</option>
+<option value="n4">n4</option>
+<option value="n5">n5</option>
+<option value="n6">n6</option>
+<option value="n7">n7</option>
+<option value="n8">n8</option>
+<option value="n9">n9</option>
+<option value="p3">p3</option>
+<option value="p4">p4</option>
+<option value="p5">p5</option>
+<option value="p6">p6</option>
+<option value="p7">p7</option>
+<option value="p8">p8</option>
+<option value="p9">p9</option>
+<option value="p10">p10</option>
+<option value="r3">r3</option>
+<option value="r4">r4</option>
+<option value="r5">r5</option>
+<option value="r6">r6</option>
+<option value="r7">r7</option>
+<option value="r8">r8</option>
+<option value="r9">r9</option>
+<option value="r10">r10</option>
+<option value="s3">s3</option>
+<option value="s4">s4</option>
+<option value="s5">s5</option>
+<option value="s6">s6</option>
+<option value="s7">s7</option>
+<option value="s8">s8</option>
+<option value="s9">s9</option>
+<option value="s10">s10</option>
+<option value="t5">t5</option>
+<option value="t6">t6</option>
+<option value="t7">t7</option>
+<option value="t8">t8</option>
+<option value="u5">u5</option>
+<option value="u6">u6</option>
+<option value="u7">u7</option>
+<option value="u8">u8</option>
+<option value="u9">u9</option>
+<option value="v5">v5</option>
+<option value="v6">v6</option>
+<option value="v7">v7</option>
+<option value="v8">v8</option>
+<option value="x5">x5</option>
+<option value="x6">x6</option>
+<option value="x7">x7</option>
+<option value="x8">x8</option>
+<option value="x9">x9</option>
+<option value="x10">x10</option>
+<option value="y6">y6</option>
+<option value="y7">y7</option>
+<option value="y8">y8</option>
+<option value="y9">y9</option>
+<option value="y10">y10</option>
+<option value="z6">z6</option>
+<option value="z7">z7</option>
+<option value="z8">z8</option>
+<option value="z9">z9</option>
+<option value="z10">z10</option>
+<option value="z11">z11</option>
+<option value="za6">za6</option>
+<option value="za7">za7</option>
+<option value="za8">za8</option>
+<option value="za9">za9</option>
+<option value="za10">za10</option>
+<option value="za11">za11</option>
+<option value="zb7">zb7</option>
+<option value="zb8">zb8</option>
+<option value="zb9">zb9</option>
+<option value="zb10">zb10</option>
+<option value="zb11">zb11</option>
+<option value="zc7">zc7</option>
+<option value="zc8">zc8</option>
+<option value="zc9">zc9</option>
+<option value="zc10">zc10</option>
+<option value="zc11">zc11</option>
+</select>
+</div>
+</div>
+<div class="columns small-1"></div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtShaftULDes">Toleranci superior(limite):</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtShaftULDes"/>
+</div>
+<div class="columns small-1">
+<div class="val">µm</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtShaftLLDei">Toleranci inferior(limite):</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtShaftLLDei"/>
+</div>
+<div class="columns small-1">
+<div class="val">µm</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtShaftMaxDia">Diámetro máximo del eje:</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtShaftMaxDia"/>
+</div>
+<div class="columns small-1">
+<div class="val">mm</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtShaftMinDia">Diámetro mínimo del eje:</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtShaftMinDia"/>
+</div>
+<div class="columns small-1">
+<div class="val">mm</div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="row tolerance_hole">
+<div class="columns small-12">
+   
+<h2 class="text-center">AGUJERO </h2>
+</div>
+<div class="columns small-12">
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="ddlHole">Posición y grado de tolerancia:</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<div class="select-replacement">
+<select id="ddlHole">
+<option value="0">Seleccione</option>
+<option value="H1">H1</option>
+<option value="H2">H2</option>
+<option value="H3">H3</option>
+<option value="H4">H4</option>
+<option value="H5">H5</option>
+<option value="H6">H6</option>
+<option value="H7">H7</option>
+<option value="H8">H8</option>
+<option value="H9">H9</option>
+<option value="H10">H10</option>
+<option value="H11">H11</option>
+<option value="H12">H12</option>
+<option value="H13">H13</option>
+<option value="H14">H14</option>
+<option value="H15">H15</option>
+<option value="H16">H16</option>
+<option value="H17">H17</option>
+<option value="H18">H18</option>
+<option value="A9">A9</option>
+<option value="A10">A10</option>
+<option value="A11">A11</option>
+<option value="A12">A12</option>
+<option value="A13">A13</option>
+<option value="B8">B8</option>
+<option value="B9">B9</option>
+<option value="B10">B10</option>
+<option value="B11">B11</option>
+<option value="B12">B12</option>
+<option value="B13">B13</option>
+<option value="C8">C8</option>
+<option value="C9">C9</option>
+<option value="C10">C10</option>
+<option value="C11">C11</option>
+<option value="C12">C12</option>
+<option value="C13">C13</option>
+<option value="CD6">CD6</option>
+<option value="CD7">CD7</option>
+<option value="CD8">CD8</option>
+<option value="CD9">CD9</option>
+<option value="CD10">CD10</option>
+<option value="D6">D6</option>
+<option value="D7">D7</option>
+<option value="D8">D8</option>
+<option value="D9">D9</option>
+<option value="D10">D10</option>
+<option value="D11">D11</option>
+<option value="D12">D12</option>
+<option value="D13">D13</option>
+<option value="E5">E5</option>
+<option value="E6">E6</option>
+<option value="E7">E7</option>
+<option value="E8">E8</option>
+<option value="E9">E9</option>
+<option value="E10">E10</option>
+<option value="EF3">EF3</option>
+<option value="EF4">EF4</option>
+<option value="EF5">EF5</option>
+<option value="EF6">EF6</option>
+<option value="EF7">EF7</option>
+<option value="EF8">EF8</option>
+<option value="EF9">EF9</option>
+<option value="EF10">EF10</option>
+<option value="F3">F3</option>
+<option value="F4">F4</option>
+<option value="F5">F5</option>
+<option value="F6">F6</option>
+<option value="F7">F7</option>
+<option value="F8">F8</option>
+<option value="F9">F9</option>
+<option value="F10">F10</option>
+<option value="FG3">FG3</option>
+<option value="FG4">FG4</option>
+<option value="FG5">FG5</option>
+<option value="FG6">FG6</option>
+<option value="FG7">FG7</option>
+<option value="FG8">FG8</option>
+<option value="FG9">FG9</option>
+<option value="FG10">FG10</option>
+<option value="G3">G3</option>
+<option value="G4">G4</option>
+<option value="G5">G5</option>
+<option value="G6">G6</option>
+<option value="G7">G7</option>
+<option value="G8">G8</option>
+<option value="G9">G9</option>
+<option value="G10">G10</option>
+<option value="JS1">JS1</option>
+<option value="JS2">JS2</option>
+<option value="JS3">JS3</option>
+<option value="JS4">JS4</option>
+<option value="JS5">JS5</option>
+<option value="JS6">JS6</option>
+<option value="JS7">JS7</option>
+<option value="JS8">JS8</option>
+<option value="JS9">JS9</option>
+<option value="JS10">JS10</option>
+<option value="JS11">JS11</option>
+<option value="JS12">JS12</option>
+<option value="JS13">JS13</option>
+<option value="JS14">JS14</option>
+<option value="JS15">JS15</option>
+<option value="JS16">JS16</option>
+<option value="JS17">JS17</option>
+<option value="JS18">JS18</option>
+<option value="J6">J6</option>
+<option value="J7">J7</option>
+<option value="J8">J8</option>
+<option value="J9">J9</option>
+<option value="K3">K3</option>
+<option value="K4">K4</option>
+<option value="K5">K5</option>
+<option value="K6">K6</option>
+<option value="K7">K7</option>
+<option value="K8">K8</option>
+<option value="K9">K9</option>
+<option value="K10">K10</option>
+<option value="M3">M3</option>
+<option value="M4">M4</option>
+<option value="M5">M5</option>
+<option value="M6">M6</option>
+<option value="M7">M7</option>
+<option value="M8">M8</option>
+<option value="M9">M9</option>
+<option value="M10">M10</option>
+<option value="N3">N3</option>
+<option value="N4">N4</option>
+<option value="N5">N5</option>
+<option value="N6">N6</option>
+<option value="N7">N7</option>
+<option value="N8">N8</option>
+<option value="N9">N9</option>
+<option value="N10">N10</option>
+<option value="N11">N11</option>
+<option value="P3">P3</option>
+<option value="P4">P4</option>
+<option value="P5">P5</option>
+<option value="P6">P6</option>
+<option value="P7">P7</option>
+<option value="P8">P8</option>
+<option value="P9">P9</option>
+<option value="P10">P10</option>
+<option value="R3">R3</option>
+<option value="R4">R4</option>
+<option value="R5">R5</option>
+<option value="R6">R6</option>
+<option value="R7">R7</option>
+<option value="R8">R8</option>
+<option value="R9">R9</option>
+<option value="R10">R10</option>
+<option value="S3">S3</option>
+<option value="S4">S4</option>
+<option value="S5">S5</option>
+<option value="S6">S6</option>
+<option value="S7">S7</option>
+<option value="S8">S8</option>
+<option value="S9">S9</option>
+<option value="S10">S10</option>
+<option value="T5">T5</option>
+<option value="T6">T6</option>
+<option value="T7">T7</option>
+<option value="T8">T8</option>
+<option value="U5">U5</option>
+<option value="U6">U6</option>
+<option value="U7">U7</option>
+<option value="U8">U8</option>
+<option value="U9">U9</option>
+<option value="U10">U10</option>
+<option value="V5">V5</option>
+<option value="V6">V6</option>
+<option value="V7">V7</option>
+<option value="V8">V8</option>
+<option value="X5">X5</option>
+<option value="X6">X6</option>
+<option value="X7">X7</option>
+<option value="X8">X8</option>
+<option value="X9">X9</option>
+<option value="X10">X10</option>
+<option value="Y6">Y6</option>
+<option value="Y7">Y7</option>
+<option value="Y8">Y8</option>
+<option value="Y9">Y9</option>
+<option value="Y10">Y10</option>
+<option value="Z6">Z6</option>
+<option value="Z7">Z7</option>
+<option value="Z8">Z8</option>
+<option value="Z9">Z9</option>
+<option value="Z10">Z10</option>
+<option value="Z11">Z11</option>
+<option value="ZA6">ZA6</option>
+<option value="ZA7">ZA7</option>
+<option value="ZA8">ZA8</option>
+<option value="ZA9">ZA9</option>
+<option value="ZA10">ZA10</option>
+<option value="ZA11">ZA11</option>
+<option value="ZB7">ZB7</option>
+<option value="ZB8">ZB8</option>
+<option value="ZB9">ZB9</option>
+<option value="ZB10">ZB10</option>
+<option value="ZB11">ZB11</option>
+<option value="ZC7">ZC7</option>
+<option value="ZC8">ZC8</option>
+<option value="ZC9">ZC9</option>
+<option value="ZC10">ZC10</option>
+<option value="ZC11">ZC11</option>
+</select>
+</div>
+</div>
+<div class="columns small-1"></div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtHoleULDES">Toleranci superior(limite):</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtHoleULDES"/>
+</div>
+<div class="columns small-1">
+<div class="val">µm</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtHoleLLDEI">Toleranci inferior(limite):</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtHoleLLDEI"/>
+</div>
+<div class="columns small-1">
+<div class="val">µm</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtHoleMaxDIA">Diámetro máximo del agujero:</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtHoleMaxDIA"/>
+</div>
+<div class="columns small-1">
+<div class="val">mm</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<div class="columns small-12 xlarge-offset-2 xlarge-4">
+<label for="txtHoleMinDIA">Diámetro mínimo del agujero:</label>
+</div>
+<div class="columns small-11 xlarge-5">
+<input type="text" class="input2" readonly="readonly" id="txtHoleMinDIA"/>
+</div>
+<div class="columns small-1">
+<div class="val">mm</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</header>
+</body>
+</head>
+</div>
+</html>

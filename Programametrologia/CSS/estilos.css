@@ -1,0 +1,38 @@
+.head{
+    border: 5px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: bisque;
+
+}
+
+.contenedor{
+
+    width: 100px;
+    height: 100px;
+   margin: 10px;
+   padding: 0px;
+
+}   
+.contenedor{
+    text-align: right;
+    display:flex; 
+   
+    }
+    
+.table{
+    border: 0px solid black;
+    border-collapse: collapse;
+    margin: auto;   
+
+}
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;  
+    padding: 1rem;
+    background-color:burlywood;
+
+}
+
+ 
